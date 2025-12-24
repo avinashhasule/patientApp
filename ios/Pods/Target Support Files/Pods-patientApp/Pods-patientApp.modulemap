@@ -1,0 +1,6 @@
+module Pods_patientApp {
+  umbrella header "Pods-patientApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

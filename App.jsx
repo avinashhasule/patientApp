@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {AuthProvider} from './src/context/AuthProvider';
 import {MastersProvider} from './src/context/MastersProvider';
 import {ToastProvider} from './src/context/ToastProvider';
+import {PatientProvider} from './src/context/PatientContext';
 import PatientGrid from './src/screens/Patient';
 import Login from './src/screens/Login';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -44,9 +45,11 @@ function App() {
     <NavigationContainer>
       <ToastProvider>
         <AuthProvider>
-          <MastersProvider>
-            <AppNavigation />
-          </MastersProvider>
+          <PatientProvider>
+            <MastersProvider>
+              <AppNavigation initialRoute={initialRoute} />
+            </MastersProvider>
+          </PatientProvider>
         </AuthProvider>
       </ToastProvider>
     </NavigationContainer>

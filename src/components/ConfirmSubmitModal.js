@@ -118,13 +118,13 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    gap: 10,
   },
   button: {
     flex: 1,
     padding: 12,
     borderRadius: 8,
     alignItems: 'center',
+    marginHorizontal: 5,
   },
   cancelButton: {
     backgroundColor: 'transparent',

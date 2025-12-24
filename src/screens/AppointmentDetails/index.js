@@ -110,7 +110,6 @@ const styles = StyleSheet.create({
   },
   actionButtons: {
     marginTop: 20,
-    gap: 10,
   },
   button: {
     padding: 15,
